@@ -5,8 +5,14 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import { GoogleLogin } from "@react-oauth/google";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Menu from "./components/MenuComponent";
-
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dishes: DISHES
+    };
+  }
+
   render() {
     return (
         <div className="App">
@@ -15,7 +21,7 @@ class App extends Component {
               <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
             </div>
           </Navbar>
-          <Menu/>
+          <Menu dishes={this.state.dishes} />
         </div>
     );
   }
