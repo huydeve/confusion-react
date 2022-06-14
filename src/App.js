@@ -5,6 +5,7 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import { GoogleLogin } from "@react-oauth/google";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Menu from "./components/MenuComponent";
+import { DISHES } from "./share/dishes";
 class App extends Component {
   constructor(props) {
     super(props);
