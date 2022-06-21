@@ -1,14 +1,5 @@
-import React, { Component } from "react";
-import { Media } from "reactstrap";
-
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardText,
-  CardBody,
-  CardTitle,
-} from "reactstrap";
+import React from "react";
+import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 
 function RenderMenuItem({ dish, onClick }) {
   return (
@@ -36,4 +27,5 @@ const Menu = (props) => {
     </div>
   );
 };
+
 export default Menu;
