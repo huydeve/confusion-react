@@ -4,7 +4,6 @@ import { Media } from "reactstrap";
 import {
   Card,
   CardImg,
-  CardImgOverlay,
   CardText,
   CardBody,
   CardTitle,
@@ -39,21 +38,7 @@ class DishDetail extends Component {
           <h4>Comments</h4>
           <ul className="list-unstyled">
             {
-              /* {comments.map((comment) => {
-              return (
-                <li key={comment.id}>
-                  <p>{comment}</p>
-                  <p>
-                    {comment.author},{" "}
-                    {new Intl.DateTimeFormat("en-us", {
-                      month: "long",
-                      day: "numeric",
-                      year: "numeric",
-                    }).format(comment.date)}
-                  </p>
-                </li>
-              );
-            })} */
+           
               comments.map((comment) => (
                 <li key={comment.id}>
                   <p>{comment.comment}</p>
