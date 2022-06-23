@@ -11,28 +11,20 @@ import { Link } from "react-router-dom";
 
 function RenderLeader({ leader }) {
   return (
-    <>
-      {/* <img className="d-flex" src={leader.image} alt={leader.name} />
+    <Media className="mt-5">
+    <Media>
+      <Media left top>
+        <Media className="mr-5" object src={leader.image} alt={leader.name} />
+      </Media>
       <Media body>
-        <h3>{leader.name}</h3>
+        <Media heading>
+          {leader.name}
+        </Media>
         <p>{leader.designation}</p>
         <p>{leader.description}</p>
-      </Media> */}
-
-      <div className="media ">
-        <img
-          className="d-flex mr-3  "
-          src={leader.image}
-          alt={leader.name} 
-        />
-
-        <div className="media-body">
-          <h3>{leader.name}</h3>
-          <p>{leader.designation}</p>
-          <p>{leader.description}</p>
-        </div>
-      </div>
-    </>
+      </Media>
+    </Media>
+  </Media>
   );
 }
 
